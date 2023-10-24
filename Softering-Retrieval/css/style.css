@@ -179,22 +179,20 @@ body::-webkit-scrollbar{
     .banner__back-logo div,.banner__about-project{
         margin-left: 32px;
     }
+    
 }
-@media (max-width:750px){
+@media (max-width:768px){
     .banner-page{
         padding-top: 290px;
         gap: 32px;
+        
     }
     .banner__back-logo div,.banner__about-project{
         margin-left: 0px;
     }
-}
-@media (max-width:320px){
-    .banner-page{
-        padding-left: 15px;
-    }
     .about-project__download-links{
         flex-direction: column;
+        padding-right: 30px;
     }
     .links__QR_text br:nth-child(1){
         display: none;
@@ -202,6 +200,12 @@ body::-webkit-scrollbar{
     .links__QR_text br:nth-child(2){
         display: block;
     }
+}
+@media (max-width:320px){
+    .banner-page{
+        padding-left: 15px;
+    }
+    
 }
 
 .list-page{
@@ -238,7 +242,7 @@ body::-webkit-scrollbar{
 .card__texts p{
     color: var(--DarkGrey);
 }
-@media (max-width:768px){
+@media (max-width:1280px){
     .list-cards{
         flex-wrap: wrap;
     }
@@ -249,7 +253,7 @@ body::-webkit-scrollbar{
         margin-right: 30px;
     }
 }
-@media (max-width:320px){
+@media (max-width:768px){
     .list-cards{
         flex-wrap: wrap;
     }
@@ -259,5 +263,8 @@ body::-webkit-scrollbar{
     }
     .list__card-1{
         margin-right: 0px;
+    }
+    .card__texts{
+        max-width: 296px;
     }
 }
