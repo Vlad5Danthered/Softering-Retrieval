@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Список заголовков */
+.List-Typography-Header{
+    gap:48px;
+    display: flex;
+    flex-direction: column;
+}
+.List-Typography-Header li{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+}
+
+/* Список текстов */
+.List-Typography-Text{
+    display: flex;
+}
+.List-Typography-Text ul{
+    margin-right: 128px;
+    gap:24px;
+    display: flex;
+    flex-direction: column;
+}
+.List-Typography-Text li{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+}
+
+/* Список ссылок */
+.List-Typography-Link li,.List-Typography-Link{
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+}
+.List-Typography-Link li{
+    gap:12px;
+}
+@media (max-width:750px) {
+    .List-Typography-Text{
+        flex-direction: column;
+        gap:64px;
+    }
+}
+
+/* Заголовок списков */
+.Typography,.Display{
+    font-size: 64px;
+    font-family: 'Graphik LCG';
+    font-weight: 800;
+    margin-bottom: 96px;
+}
+.Display{
+    margin:48px 0 32px 0px;
+    font-weight: 700;
+    color: var(--Black);
+}
+
+/* Название шрифта */
+.Title-Typography{
+    font-size: 16px;
+    font-family: 'Graphik LCG';
+    font-weight: 700;
+    color: var(--DarkGrey);
+}
+@media (max-width:750px){
+    .Title-Typography{
+        font-size: 28px;
+    }
+}
+
+/* Стиль, который есть у каждого шрифта */
+.H1ExtraBold,.H2ExtraBold,.H3ExtraBold,.H4SemilBold,.H5Bold,.H6Bold,h1,h2,h3,h4,h5,h6,p,span,a{
+    color: var(--DarkBlue);
+    font-family: 'Graphik LCG';
+    font-style: normal;
+}
+.H1ExtraBold,.H2ExtraBold,.H3ExtraBold,.H4SemilBold,.H5Bold,.H6Bold{
+    font-weight: 600;
+}
+
+/* Заголовок */
+.H1ExtraBold{
+    font-size: calc(64px + var(--number) - var(--number2));
+}
+.H2ExtraBold{
+    font-size: calc(45px + var(--number));
+}
+.H3ExtraBold{
+    font-size: calc(34px + var(--number));
+}
+.H4SemilBold{
+    font-size: calc(28px + var(--number));
+}
+.H5Bold{
+    font-size: calc(20px + var(--number));
+}
+.H6Bold{
+    font-size: calc(18px + var(--number));
+}
+
+/* Текст */
+.Regular-M{
+    font-size: calc(18px + var(--number));
+    font-weight: 400;
+}
+.Regular-S{
+    font-size: calc(16px + var(--number));
+    font-weight: 400;
+}
+.Medium-M{
+    font-size: calc(18px + var(--number));
+    font-weight: 500;
+}
+.Medium-S{
+    font-size: calc(16px + var(--number));
+    font-weight: 500;
+}
+
+/* Ссылка */
+.Link-M,.Link-S{
+    font-weight: 400px;
+    color: var(--SkyBlue);
+    text-decoration: none;
+}
+.Link-M:hover,.Link-S:hover{
+    text-decoration:underline;
+}
+.Link-M{
+    font-size: calc(18px + var(--number));
+}
+.Link-S{
+    font-size: calc(16px + var(--number));
+}
+
+/* Регулятор размера шрифта на мобильных устройствах */
+:root{
+    --number:0px;
+    --number2:0px;
+}
+@media (max-width:1280px){
+    :root{
+        --number:25%;
+    }
+}
+@media (max-width:750px){
+    :root{
+        --number:50%;
+        --number2:25%;
+    }
+}
+@media (max-width:320px){
+    :root{
+        --number:100%;
+        /* --number2:50%; */
+    }
+}
