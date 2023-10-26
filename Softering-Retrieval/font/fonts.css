@@ -68,7 +68,7 @@
     font-weight: 700;
     color: var(--DarkGrey);
 }
-@media (max-width:750px){
+@media (max-width:750px){ 
     .Title-Typography{
         font-size: 28px;
     }
@@ -137,6 +137,11 @@
 .Link-S{
     font-size: calc(16px + var(--number));
 }
+a:focus{
+    /* outline: 8px solid rgba(179, 233, 255, 1); */
+    outline: none;
+    text-decoration:underline;
+}
 
 /* Регулятор размера шрифта на мобильных устройствах */
 :root{
@@ -148,10 +153,10 @@
         --number:25%;
     }
 }
-@media (max-width:750px){
+@media (max-width:980px){
     :root{
-        --number:50%;
-        --number2:25%;
+        --number:100%;
+        --number2:50%;
     }
 }
 @media (max-width:320px){
@@ -159,4 +164,19 @@
         --number:100%;
         /* --number2:50%; */
     }
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+.button h5{
+    width: 100px;
+    text-align: right;
 }
