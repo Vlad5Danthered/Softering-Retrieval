@@ -3,6 +3,10 @@
     padding: 0;
     list-style: none;
 }
+@font-face {
+    font-family: "Graphik LCG";
+    src: url('./Graphik-Medium-Web.ttf') format('truetype');
+}
 
 /* Список заголовков */
 .List-Typography-Header{
