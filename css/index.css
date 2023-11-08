@@ -1276,9 +1276,11 @@ body {
   display: flex;
   gap: 12px;
 }
-.footer__call svg {
-  width: 5%;
-  height: 5%;
+@media (max-width: 980px) {
+  .footer__call svg {
+    width: 5%;
+    height: 5%;
+  }
 }
 .footer__social-network {
   display: flex;
