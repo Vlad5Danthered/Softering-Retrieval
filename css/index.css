@@ -11,10 +11,6 @@ body {
   overflow-x: hidden;
 }
 
-body::-webkit-scrollbar {
-  width: 0px;
-}
-
 :root {
   --SkyBlue: #00A8E9;
   --DarkBlue: #112246;
