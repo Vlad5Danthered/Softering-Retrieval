@@ -4,8 +4,9 @@
     padding: 0;
     list-style: none;
 }
-@font-face {
-    
+@font-face{
+    font-family: "Graphik LCG";
+    src: local(Graphik LCG), url('./GraphikLCG-Regular.ttf') format('truetype');
 }
 
 /* Список заголовков */
@@ -85,11 +86,6 @@
     font-family: 'Graphik LCG';
     font-style: normal;
     font-family: "Graphik LCG";
-    src: url('./GraphikLCG-Regular.ttf') format('truetype');
-    src: url('./GraphikLCG-Medium.ttf') format('truetype');
-    src: url('./GraphikLCG-Black.ttf') format('truetype');
-    src: url('./GraphikLCG-Semibold.ttf') format('truetype');
-    src: url('./GraphikLCG-Bold.ttf') format('truetype');
 }
 .H1ExtraBold,.H2ExtraBold,.H3ExtraBold,.H4SemilBold,.H5Bold,.H6Bold{
     font-weight: 600; 
